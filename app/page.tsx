@@ -132,7 +132,7 @@ export default function HomePage() {
             Log In
           </Button>
           <Avatar className="w-8 h-8">
-            <AvatarImage src="/diverse-student-profiles.png" />
+            <AvatarImage src="https://i.pinimg.com/736x/e4/75/d3/e475d376939af25479920a32781c5f83.jpg" />
             <AvatarFallback>U</AvatarFallback>
           </Avatar>
         </div>
@@ -344,7 +344,7 @@ export default function HomePage() {
             <Card className="p-6">
               <div className="flex items-center mb-4">
                 <Avatar className="w-12 h-12 mr-4">
-                  <AvatarImage src="/happy-female-student.png" />
+                  <AvatarImage src="https://i.pinimg.com/1200x/c0/92/01/c092013329f6f6fcd43cd0fafae95109.jpg" />
                   <AvatarFallback>SJ</AvatarFallback>
                 </Avatar>
                 <div>
@@ -365,7 +365,7 @@ export default function HomePage() {
             <Card className="p-6">
               <div className="flex items-center mb-4">
                 <Avatar className="w-12 h-12 mr-4">
-                  <AvatarImage src="/smiling-male-student.png" />
+                  <AvatarImage src="https://i.pinimg.com/736x/e4/75/d3/e475d376939af25479920a32781c5f83.jpg" />
                   <AvatarFallback>MR</AvatarFallback>
                 </Avatar>
                 <div>
@@ -386,7 +386,7 @@ export default function HomePage() {
             <Card className="p-6">
               <div className="flex items-center mb-4">
                 <Avatar className="w-12 h-12 mr-4">
-                  <AvatarImage src="/enthusiastic-female-student.jpg" />
+                  <AvatarImage src="https://i.pinimg.com/1200x/c0/92/01/c092013329f6f6fcd43cd0fafae95109.jpg" />
                   <AvatarFallback>EL</AvatarFallback>
                 </Avatar>
                 <div>
