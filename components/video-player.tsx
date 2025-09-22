@@ -14,12 +14,12 @@ interface VideoPlayerProps {
 export function VideoPlayer({ videoId, title, isOpen, onClose }: VideoPlayerProps) {
   useEffect(() => {
     if (isOpen) {
-      console.log("[v0] Opening video player for:", title, "ID:", videoId)
+      console.log("Opening video player for:", title, "ID:", videoId)
     }
   }, [isOpen, title, videoId])
 
   if (!videoId) {
-    console.error("[v0] No video ID provided to VideoPlayer")
+    console.error("No video ID provided to VideoPlayer")
     return null
   }
 
@@ -41,8 +41,8 @@ export function VideoPlayer({ videoId, title, isOpen, onClose }: VideoPlayerProp
             className="w-full h-full"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
-            onError={() => console.error("[v0] Error loading YouTube video:", videoId)}
-            onLoad={() => console.log("[v0] YouTube video loaded successfully:", videoId)}
+            onError={() => console.error("Error loading YouTube video:", videoId)}
+            onLoad={() => console.log("YouTube video loaded successfully:", videoId)}
           />
         </div>
       </DialogContent>

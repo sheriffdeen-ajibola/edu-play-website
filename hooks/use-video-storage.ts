@@ -51,21 +51,21 @@ export function useVideoStorage() {
 
   // Load videos from localStorage on mount
   useEffect(() => {
-    console.log("[v0] Loading videos from storage...")
+    console.log("Loading videos from storage...")
     try {
       const stored = localStorage.getItem(STORAGE_KEY)
       if (stored) {
         const parsedVideos = JSON.parse(stored)
-        console.log("[v0] Loaded videos from storage:", parsedVideos.length)
+        console.log("Loaded videos from storage:", parsedVideos.length)
         setVideos(parsedVideos)
       } else {
         // Initialize with default videos if none exist
-        console.log("[v0] No stored videos found, using defaults")
+        console.log("No stored videos found, using defaults")
         setVideos(defaultVideos)
         localStorage.setItem(STORAGE_KEY, JSON.stringify(defaultVideos))
       }
     } catch (error) {
-      console.error("[v0] Failed to load videos from storage:", error)
+      console.error("Failed to load videos from storage:", error)
       setVideos(defaultVideos)
     } finally {
       setIsLoading(false)
@@ -76,16 +76,16 @@ export function useVideoStorage() {
   useEffect(() => {
     if (!isLoading && videos.length > 0) {
       try {
-        console.log("[v0] Saving videos to storage:", videos.length)
+        console.log("Saving videos to storage:", videos.length)
         localStorage.setItem(STORAGE_KEY, JSON.stringify(videos))
       } catch (error) {
-        console.error("[v0] Failed to save videos to storage:", error)
+        console.error("Failed to save videos to storage:", error)
       }
     }
   }, [videos, isLoading])
 
   const addVideo = (newVideoData: Omit<Video, "id">) => {
-    console.log("[v0] Adding new video:", newVideoData.title)
+    console.log("Adding new video:", newVideoData.title)
     const newVideo: Video = {
       ...newVideoData,
       id: Date.now().toString(),

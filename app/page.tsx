@@ -23,9 +23,9 @@ export default function HomePage() {
   const [currentView, setCurrentView] = useState<ViewMode>("home")
 
   const handleVideoClick = (video: any) => {
-    console.log("[v0] Video clicked:", video.title, "YouTube ID:", video.youtubeId)
+    console.log("Video clicked:", video.title, "YouTube ID:", video.youtubeId)
     if (!video || !video.youtubeId) {
-      console.error("[v0] Invalid video data:", video)
+      console.error("Invalid video data:", video)
       return
     }
     setSelectedVideo(video)
@@ -33,13 +33,13 @@ export default function HomePage() {
   }
 
   const handleClosePlayer = () => {
-    console.log("[v0] Closing video player")
+    console.log("Closing video player")
     setIsPlayerOpen(false)
     setSelectedVideo(null)
   }
 
   const handleAddVideo = (newVideoData: any) => {
-    console.log("[v0] Adding video from form:", newVideoData.title)
+    console.log("Adding video from form:", newVideoData.title)
     addVideo(newVideoData)
   }
 
@@ -132,7 +132,7 @@ export default function HomePage() {
             Log In
           </Button>
           <Avatar className="w-8 h-8">
-            <AvatarImage src="https://i.pinimg.com/1200x/93/1f/6d/931f6d92104130d0775a33a6e85ded65.jpg" />
+            <AvatarImage src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/design-mode-images/931f6d92104130d0775a33a6e85ded65-9WcjkRdDOtcaWktTZaOh6CfQz7wIht.jpg" />
             <AvatarFallback>U</AvatarFallback>
           </Avatar>
         </div>
@@ -344,7 +344,7 @@ export default function HomePage() {
             <Card className="p-6">
               <div className="flex items-center mb-4">
                 <Avatar className="w-12 h-12 mr-4">
-                  <AvatarImage src="https://i.pinimg.com/1200x/93/1f/6d/931f6d92104130d0775a33a6e85ded65.jpg" />
+                  <AvatarImage src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/design-mode-images/931f6d92104130d0775a33a6e85ded65-9WcjkRdDOtcaWktTZaOh6CfQz7wIht.jpg" />
                   <AvatarFallback>SJ</AvatarFallback>
                 </Avatar>
                 <div>
@@ -365,7 +365,7 @@ export default function HomePage() {
             <Card className="p-6">
               <div className="flex items-center mb-4">
                 <Avatar className="w-12 h-12 mr-4">
-                  <AvatarImage src="https://i.pinimg.com/1200x/93/1f/6d/931f6d92104130d0775a33a6e85ded65.jpg" />
+                  <AvatarImage src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/design-mode-images/931f6d92104130d0775a33a6e85ded65-9WcjkRdDOtcaWktTZaOh6CfQz7wIht.jpg" />
                   <AvatarFallback>MR</AvatarFallback>
                 </Avatar>
                 <div>
@@ -386,7 +386,7 @@ export default function HomePage() {
             <Card className="p-6">
               <div className="flex items-center mb-4">
                 <Avatar className="w-12 h-12 mr-4">
-                  <AvatarImage src="https://i.pinimg.com/1200x/93/1f/6d/931f6d92104130d0775a33a6e85ded65.jpg" />
+                  <AvatarImage src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/design-mode-images/931f6d92104130d0775a33a6e85ded65-9WcjkRdDOtcaWktTZaOh6CfQz7wIht.jpg" />
                   <AvatarFallback>EL</AvatarFallback>
                 </Avatar>
                 <div>
