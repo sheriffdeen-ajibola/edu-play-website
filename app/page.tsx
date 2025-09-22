@@ -61,7 +61,7 @@ export default function HomePage() {
   }
 
   if (!videos || videos.length === 0) {
-    console.error("[v0] No videos available")
+    console.error("No videos available")
     return (
       <div className="min-h-screen bg-background flex items-center justify-center">
         <div className="text-center">
